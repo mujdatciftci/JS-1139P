@@ -22,38 +22,40 @@
                      <div class="col-md-4 d-flex flex-column gap-2">
                             <h2 id="teamNameLeft" class="team-name">Takım A</h2>
                             <div class="arrows">
-                              <button id="upLeft" class="up" onclick="up('Left')">
+                              <button id="upLeft" class="up" onclick="up('left')">
                                 <i class="bi bi-arrow-up text-white"></i>
                               </button>
-                              <button id="downLeft" class="down">
-                                <i class="bi bi-arrow-down text-white"></i></button>
+                              <button id="downLeft" class="down" onclick="down('left')" >
+                                <i class="bi bi-arrow-down text-white"></i>
+                              </button>
                             </div>
-                            <button class="score">
+                            <button class="entryScore" onclick="entryScore('left')">
                               Gol Sayısı
                             </button>
-                            <button class="chage-team-name">
+                            <button class="chage-team-name" onclick="changeTeamName('Left')">
                               Takım İsmi
                             </button>
                             
                      </div>
-                     <div class="col-md-4 d-flex justify-content-center align-self-start gap-5">
-                      <span class="score-left">0</span>
-                      <span class="separate">-</span>
-                      <span class="score-right">0</span>
+                     <div class="col-md-4 d-flex justify-content-around align-self-start display-score">
+                      <span id="score-left" class="score-left">0</span>
+                      <span id="separate" class="separate">-</span>
+                      <span id="score-right" class="score-right">0</span>
                      </div>
                      <div class="col-md-4 d-flex flex-column gap-2">
                       <h2 id="teamNameRight" class="team-name">Takım B</h2>
                       <div class="arrows">
-                        <button id="upRight" class="up">
+                        <button id="upRight" class="up" onclick="up('right')">
                           <i class="bi bi-arrow-up text-white"></i>
                         </button>
-                        <button id="downRight" class="down">
+                        <button id="downRight" class="down" onclick="down('right')">
                           <i class="bi bi-arrow-down text-white"></i></button>
                       </div>
-                      <button class="score">
+                      <button class="entryScore"
+                      onclick="entryScore('right')">
                         Gol Sayısı
                       </button>
-                      <button class="chage-team-name">
+                      <button class="chage-team-name" onclick="changeTeamName('Right')">
                         Takım İsmi
                       </button>
                       
